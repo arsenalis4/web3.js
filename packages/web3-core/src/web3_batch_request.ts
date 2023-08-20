@@ -20,7 +20,7 @@ import { jsonRpc, Web3DeferredPromise } from 'web3-utils';
 import { OperationAbortError, OperationTimeoutError, ResponseError } from 'web3-errors';
 import { Web3RequestManager } from './web3_request_manager.js';
 
-export const DEFAULT_BATCH_REQUEST_TIMEOUT = 1000;
+export const DEFAULT_BATCH_REQUEST_TIMEOUT = Infinity;
 
 export class Web3BatchRequest {
 	private readonly _requestManager: Web3RequestManager;
